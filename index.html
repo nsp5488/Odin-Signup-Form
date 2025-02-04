@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css" />
+        <title>Sign Up!</title>
+    </head>
+    <body>
+        <div id="main">
+            <div id="photo">
+                <div id="splashText">
+                    <img src="odin-lined.png" />
+                    <h2>ODIN</h2>
+                </div>
+                <img src="splash.avif" />
+            </div>
+            <div id="body">
+                <div id="hero">
+                    <h3>
+                        This is not a real online service! You know you need
+                        something like this in your life to help you realize
+                        your deepest dreams. Sign up <em>now</em> to get started
+                    </h3>
+                    <br />
+                    <h3>You <em>know</em> you want to!</h3>
+                </div>
+                <div id="formDiv">
+                    <h4>Let's do this!</h4>
+                    <form id="signUpForm">
+                        <fieldset>
+                            <label for="first_name">First Name</label>
+                            <input
+                                name="first_name"
+                                required
+                                minlength="1"
+                                type="text"
+                            />
+
+                            <label for="email">Email</label>
+                            <input name="email" required type="email" />
+
+                            <label for="password">Password</label>
+                            <input
+                                name="password"
+                                type="password"
+                                required
+                                minlength="6"
+                                maxlength="32"
+                            />
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="last_name">Last Name</label>
+                            <input name="last_name" required type="text" />
+                            <label for="phone_number">Phone Number</label>
+                            <input
+                                name="phone_number"
+                                required
+                                minlength="7"
+                                maxlength="10"
+                                type="tel"
+                            />
+                            <label for="confirm_password"
+                                >Confirm Password</label
+                            >
+                            <input
+                                name="confirm_password"
+                                type="password"
+                                required
+                                minlength="6"
+                                maxlength="32"
+                            />
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="footer">
+                    <button type="submit" form="signUpForm">
+                        Create Account
+                    </button>
+
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
